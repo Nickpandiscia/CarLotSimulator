@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CarLotSimulator
 {
@@ -6,28 +7,57 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
-            //TODO
+            var truck = new Car();
+            truck.Year = 1991;
+            truck.Make = "Toyota";
+            truck.Model = "Tacoma";
+            truck.EngineNoise = "Thunderstorm";
+            truck.HonkNoise = "A cat";
+            truck.IsDriveable = true;
+            Console.WriteLine(truck.Year + " " + truck.Make + " " + truck.Model + " " + truck.EngineNoise + " " + truck.HonkNoise);
+            Console.WriteLine(truck.IsDriveable);
+            truck.MakeEngineNoise(truck.EngineNoise);
+            truck.MakeHonkNoise(truck.HonkNoise);
+            
 
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property
+            var sedan = new Car();
+            sedan.Year = 2000;
+            sedan.Make = "Chevy";
+            sedan.Model = "Malibu";
+            sedan.EngineNoise = "Four Cylinder";
+            sedan.HonkNoise = "Clown Nose";
+            sedan.IsDriveable = false;
+            Console.WriteLine(sedan.Year + " " + sedan.Make + " " + sedan.Model + " " + sedan.EngineNoise + " " + sedan.HonkNoise);
+            Console.WriteLine(sedan.IsDriveable);
+            sedan.MakeEngineNoise(sedan.EngineNoise);
+            sedan.MakeHonkNoise(sedan.HonkNoise);
+            
 
+            var sportCar = new Car();
+            sportCar.Year = 2022;
+            sportCar.Make = "Porsche";
+            sportCar.Model = "Carerra GT";
+            sportCar.EngineNoise = "a very well built machine";
+            sportCar.HonkNoise = "a regular horn";
+            sportCar.IsDriveable = true;
+            Console.WriteLine(sportCar.Year + " " + sportCar.Make + " " + sportCar.Model + " " + sportCar.EngineNoise);
+            Console.WriteLine(sportCar.HonkNoise + " " + sportCar.IsDriveable);
+            sportCar.MakeEngineNoise(sportCar.EngineNoise);
+            sportCar.MakeHonkNoise(sportCar.HonkNoise);
+            
 
-            //Now that the Car class is created we can instanciate 3 new cars
-            //Set the properties for each of the cars
-            //Call each of the methods for each car
+            var carLot = new List<Car>();
+            carLot.Add(truck);
+            carLot.Add(sedan);
+            carLot.Add(sportCar);
 
-            //*************BONUS*************//
-
-            // Set the properties utilizing the 3 different ways we learned about, one way for each car
-
-            //*************BONUS X 2*************//
-
-            //Create a CarLot class
-            //It should have at least one property: a List of cars
-            //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
-            //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+            foreach(var car in carLot)
+            {
+                Console.WriteLine($"{truck.Year}, {truck.Make}, {truck.Model}");
+                Console.WriteLine($"{sedan.Year}, {sedan.Make}, {sedan.Model}");
+                Console.WriteLine($"{sportCar.Year}, {sportCar.Make}, {sportCar.Model}");
+                Console.ReadLine();
+            }          
         }
     }
 }
