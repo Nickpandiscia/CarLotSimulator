@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "gNF5HWCvOyx3MzFc2+fTzXzPuQKX7Xftyb2gQarTwWG5Dm9DpMxL33JCK/2YTRC/VqVrhWdV6HI61/dOy9hyHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\npand\\repos\\CarLotSimulator\\CarLotSimulatorApp\\CarLotSimulator\\CarLotSimulator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\npand\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
+    "C:\\Users\\npand\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\npand\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\npand\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
