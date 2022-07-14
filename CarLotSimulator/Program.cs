@@ -51,6 +51,8 @@ namespace CarLotSimulator
             carLot.Add(sedan);
             carLot.Add(sportCar);
 
+            Console.WriteLine($"Number of cars created : {CarLot.numberOfCars} cars."); //added number of cars currently created.
+
             foreach(var car in carLot)
             {
                 Console.WriteLine($"{truck.Year}, {truck.Make}, {truck.Model}");
